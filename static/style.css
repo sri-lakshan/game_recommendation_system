@@ -1,0 +1,128 @@
+body {
+    background-color: #121212; /* Dark background */
+    font-family: 'Arial', sans-serif;
+    animation: fadeIn 1.5s ease-in-out;
+    color: white; /* Ensure text is readable */
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.sidebar {
+    background: linear-gradient(180deg, #1d1d1d, #292929); /* Dark gradient for sidebar */
+    color: white;
+}
+
+.stButton > button {
+    background-color: #3b6ef0; /* Button color */
+    color: white !important; /* Ensures the text is always white */
+    border-radius: 5px;
+    padding: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.stButton > button:hover {
+    background-color: #2a5dcf; /* Darker blue for hover */
+    color: white !important; /* Ensures the text remains white on hover */
+    transform: scale(1.05);
+}
+
+img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Lighter shadow for contrast */
+    transition: transform 0.3s ease-in-out;
+    animation: zoomIn 0.8s ease-in-out;
+}
+
+@keyframes zoomIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    color: #FFD700; /* Gold color */
+    animation: slideInFromLeft 1s ease;
+}
+
+h2 {
+    color: #FFD700; /* Gold color for headings */
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.stExpander {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.more-info-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #333; /* Dark text color for contrast */
+    background-color: white; /* White color for button */
+    border: 2px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.more-info-button:hover {
+    background-color: #f0f0f0; /* Light gray for hover */
+    transform: scale(1.05);
+}
+
+.sidebar-more-info-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #333; /* Dark text color for contrast */
+    background-color: white; /* White color for sidebar button */
+    border: 2px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.sidebar-more-info-button:hover {
+    background-color: #f0f0f0; /* Light gray for hover */
+    transform: scale(1.05);
+}
+
+/* New styles for keyword colors */
+.genre {
+    color: #FF5733; /* A vibrant color for genres */
+}
+
+.esrb {
+    color: #FFC300; /* Yellow for ESRB ratings */
+}
+
+.platform {
+    color: #28B463; /* Green for platforms */
+}
+
+.metacritic {
+    color: #3498DB; /* Blue for Metacritic scores */
+}
+
+.tag {
+    color: #9B59B6; /* Purple for tags */
+}

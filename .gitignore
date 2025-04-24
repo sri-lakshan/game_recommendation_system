@@ -1,0 +1,8 @@
+.DS_Store
+!games_data500.csv
+!games_data500.pkl
+!cosine_sim500.pkl
+
+.streamlit/
+data/
+backups/
